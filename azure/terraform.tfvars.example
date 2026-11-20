@@ -1,0 +1,10 @@
+# Copy to terraform.tfvars and fill in. terraform.tfvars is gitignored - keep it local.
+
+admin_password       = "ChangeMe-Str0ngP@ssw0rd!"   # 12+ chars, upper/lower/digit/symbol
+my_ip                = "203.0.113.5/32"              # curl ifconfig.me, then add /32
+budget_contact_email = "you@school.edu"
+budget_start         = "2026-11-01T00:00:00Z"        # first day of THIS month, RFC3339
+
+# optional overrides:
+# location = "eastus"
+# vm_size  = "Standard_B2s"

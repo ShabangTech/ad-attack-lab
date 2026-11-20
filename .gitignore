@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------------------
+# NEVER commit secrets or state. Terraform state can contain plaintext
+# passwords and keys; tfvars holds your creds; vulnerable-AD uses lab passwords.
+# ---------------------------------------------------------------------------
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+*.tfvars
+!*.tfvars.example
+crash.log
+*.pem
+*.ppk
+azureauth.json
+# loot / attack output
+loot/
+*.hash
+*.ccache
+*.kirbi
